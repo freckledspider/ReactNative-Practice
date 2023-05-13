@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native"
 const Banner = () => {
     return (
         <View style={styles.bannerContainer}>
-            <Text style={styles.bannerText}>IMDB API MOVIE SEARCH</Text>
+            <Text style={styles.bannerText}>OMDB API MOVIE SEARCH</Text>
         </View>
     )
 }

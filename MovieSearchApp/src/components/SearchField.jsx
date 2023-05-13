@@ -1,12 +1,21 @@
+import { useState } from "react"
 import { Pressable, StyleSheet, TextInput, View, Text } from "react-native"
 
-const SearchField = () => {
+const SearchField = ({onSubmit}) => {
+    const [searchString, setSearchString] = useState('')
+
+    const handleSearch = () => {
+        onSubmit(searchString)
+    }
+
     return (
         <View style={{
             flexDirection: 'row',
             padding: 10
         }}>
-            <TextInput style={{
+            <TextInput 
+            onChangeText={setSearchString}
+            style={{
             borderColor: 'gray',
             borderRadius: 5,
             borderWidth: 1,
@@ -14,7 +23,9 @@ const SearchField = () => {
             margin: 10,
             paddingVertical: 0
             }}/>
-            <Pressable style={{
+            <Pressable 
+            onPress={handleSearch}
+            style={{
                 marginVertical: 10,
                 padding: 10,
                 backgroundColor: 'gray',
