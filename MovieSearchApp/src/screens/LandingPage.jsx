@@ -1,7 +1,12 @@
-import {Text} from 'react-native'
+import { View } from 'react-native'
+import Banner from '../components/Banner'
 
 const LandingPage = () => {
-    return <Text>LandingPage</Text>
+    return (
+        <View>
+            <Banner />
+        </View>
+    )
 }
 
 export default LandingPage
