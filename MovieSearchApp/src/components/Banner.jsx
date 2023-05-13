@@ -12,13 +12,15 @@ const styles = StyleSheet.create({
     bannerContainer: {
         backgroundColor: 'black',
         flex: 1,
-        maxHeight: 300
+        maxHeight: 100
     },
     bannerText: {
         color: 'white',
+        flex: 1,
         fontSize: 24,
         textAlign: 'center',
         justifyContent: 'center',
+        textAlignVertical: 'center'
     },
 })
 

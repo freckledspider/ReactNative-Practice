@@ -69,7 +69,8 @@ function App(): JSX.Element {
       />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
+        style={backgroundStyle}
+        contentContainerStyle={{flexGrow: 1}}>
           <LandingPage />
       </ScrollView>
     </SafeAreaView>
